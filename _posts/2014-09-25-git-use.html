@@ -12,5 +12,13 @@ git log -2 				#显示最近两次的提交记录
 git add 2014-09-25-git-use.html		#将新添加的文件加入缓存区(下一次提交到远程仓库时将提交所有新添加到缓存区的内容，相当于合代码)
 git commit -m "git使用练习提交1"	#给添加的内容增加注释
 git push origin gh-pages		#正式提交代码到远程仓库(提交到"gh-pages"这个分支下面)
+
+#仓库初始化
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/idearbank/learn.git
+git push -u origin master
 </pre>
 <p>{{ page.date | date_to_string }}</p>
