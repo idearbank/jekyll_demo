@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Makedown测试
+title: Markdown测试
 ---
 ```
 var a = 'hello'
