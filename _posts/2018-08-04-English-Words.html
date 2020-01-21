@@ -51,7 +51,7 @@ FIELD() is the <b>complement</b>(n.	补充; 补足语;) of ELT().
 			The furniture comes complete with tools and instructions for assembly.
 			这件家具备有组装工具和说明书。
 			
-			The book, complete with CD, costs £35.
+			The book, complete with CD, costs ￡35.
 			此书包括光盘，售价35英镑。
 			
 		[not before noun] v.完成；结束 
@@ -69,5 +69,21 @@ FIELD() is the <b>complement</b>(n.	补充; 补足语;) of ELT().
 			Spoken language contains many incomplete sentences.
 			口语中有很多不完整的句子。
 
+
+.then(({value, action}) => {
+    let <i>cat_name_new</i> = value;
+    that.doEditCat(cat_id, cat_name_new, function (data) {
+        if(data.code === 0){
+            Tools.toast("修改成功");
+        }
+    });
+    console.log(value, action);
+})
+上面的代码编辑器会提示：
+Local variable 'cat_name_new' is <b>redundant</b>（adj.被裁减的; <b>多余的</b>; 不需要的;）.
+
+    My husband was made <b>redundant</b> late last year.
+    我丈夫去年年底<b>被裁</b>了。
+    
 </pre>
 <p>{{ page.date | date_to_string }}</p>
