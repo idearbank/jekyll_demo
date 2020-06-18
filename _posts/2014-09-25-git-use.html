@@ -79,6 +79,18 @@ git commit
 
 git push origin master
 
+#将仓库推送到远程
+…or create a new repository on the command line
+echo "# blog" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/idearbank/blog.git
+git push -u origin master
+                
+…or push an existing repository from the command line
+git remote add origin https://github.com/idearbank/blog.git
+git push -u origin master
 
 </pre>
 <p>{{ page.date | date_to_string }}</p>
